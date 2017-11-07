@@ -54,7 +54,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mainActivityAdapter.notifyDataSetChanged();
     }
 
+    /***
+     * find id from xml to java
+     */
     private void findViews() {
+
         hashMap = new HashMap<>();
         arrayList = new ArrayList<>();
         apiProgressDialog = new ApiProgressDialog(this);
@@ -77,6 +81,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             this.hashMap.putAll(ApiDataModel.getListFromPreferences(this));
             changeDatas();
         }
+        /***
+         * 5 min delay when activity start using handler
+         */
 
         new Handler().postDelayed(new Runnable() {
             @Override
@@ -95,6 +102,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
         checkflag = true;
+        /***
+         * button click manage
+         */
         switch (view.getId()) {
 
             case R.id.btn1:

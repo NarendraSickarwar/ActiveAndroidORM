@@ -8,6 +8,9 @@ import android.content.Context;
  */
 
 public class ApiProgressDialog {
+    /***
+     * progress dialog showing
+     */
     private ProgressDialog progressDialog;
 
     public ApiProgressDialog(Context context) {

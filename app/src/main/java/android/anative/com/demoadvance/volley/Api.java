@@ -5,6 +5,9 @@ package android.anative.com.demoadvance.volley;
  */
 
 public class Api {
+    /***
+     * api url static url
+     */
     public static final String COMMENT_URL = "https://jsonplaceholder.typicode.com/comments";
     public static final int ID_COMMENT_API = 1;
 
